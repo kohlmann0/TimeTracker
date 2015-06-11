@@ -44,7 +44,7 @@ class GUIHandle(wx.Frame):
         # sizer.Add(self.projectEntry, (1,0),(1,1), wx.EXPAND )
         
         # Add a Combo box for testing.
-        self.projectCombo = wx.ComboBox(self, -1, choices=self.getProjectChoices(), style=wx.CB_DROPDOWN)
+        self.projectCombo = wx.ComboBox(self, -1, choices=self.getProjectChoices(), style=wx.CB_READONLY)
         self.projectCombo.SetSelection(0)
         sizer.Add(self.projectCombo, (1,0), (1,1), wx.EXPAND)
         
@@ -151,6 +151,7 @@ class GUIHandle(wx.Frame):
             self.stopButton.SetBackgroundColour(wx.RED)
             self.entry.SetEditable(False)
             self.entry.SetBackgroundColour("LIGHT GREY")
+            self.projectCombo.Enable(False)
         elif status == "PAUSE":
             self.startButton.SetForegroundColour("LIGHT GREY")
             self.startButton.SetBackgroundColour(wx.WHITE)
@@ -167,6 +168,7 @@ class GUIHandle(wx.Frame):
             self.stopButton.SetBackgroundColour(wx.WHITE)
             self.entry.SetEditable(True)
             self.entry.SetBackgroundColour(wx.WHITE)
+            self.projectCombo.Enable(True)
             
             
     def getProjectChoices(self):
