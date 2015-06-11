@@ -1,2 +1,4 @@
-0001	28800.0	Generic Task Comment
-0002	28800.0	Generic Task Comment
+2015-06-11 13:44:55.869000	Time Tracker	5	Debugging Timer Code
+2015-06-11 13:46:00.028000	Time Tracker	4	Debugging Timer Code
+2015-06-11 13:46:08.880000	Labs	2	Debugging Timer Code
+2015-06-11 13:48:12.526000	Time Tracker	3	Testing new Log Entry Formula

@@ -18,30 +18,11 @@ Future Iterations:
 4. If I extend it to a project management tool, hardware costs, and other costs may be incorporated.
 
 """
-from datetime import *
-from DataEntryClass import *
-
+from GUIHandle import startGUI
 
 def main():
-    #Debug Area
-    DEBUG = True
-    now = datetime.now()
-    then = now.replace(hour=8)
-    
-    logEntry = DataEntry()
-    logEntry.setProjectNumber("0001")
-    logEntry.setTaskComment("Generic Task Comment")
-    logEntry.setStartTime(then)
-    logEntry.setStopTime(now)
-
-    
-    logEntry.debugPrintEntry()
-    logEntry.calculateCumulativeTime()
-    logEntry.debugPrintEntry()
-    
-    logEntry.exportToLogFile()
-    logEntry.setProjectNumber("0002")
-    logEntry.exportToLogFile()
+    #Start the GUI
+    startGUI()
     return
 
 def debug(message):
