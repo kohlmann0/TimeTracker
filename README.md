@@ -11,6 +11,9 @@ can just use it as a reminder of what you've done during the day.
 If you want to add more default projects, add them to the project_list.txt
 
 Good luck and Good time-keeping.
+
 Michael Kohlmann
+
 Personal school project #1 for devCodeCamp in Brookfield, Wisconsin, USA
+
 6/12/2015
